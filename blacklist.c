@@ -7,14 +7,21 @@
 
 int main(int argc, char *argv[])
 {
+	FILE *fp;
 	int i = 0;
 
-	printf("Gift blacklist:\n");
+	fp = fopen("README.md", "w+");
+	if (!fp)
+		return 1;
+
+	fprintf(fp, "# Gift blacklist\n\n");
 
 	while (blacklist[i][0]) {
-		printf(" - %s\n", blacklist[i]);
+		fprintf(fp, " - %s\n", blacklist[i]);
 		i++;
 	}
+
+	fclose(fp);
 
 	return 0;
 }
