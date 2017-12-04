@@ -8,8 +8,8 @@ const char * blacklist[] = {
 	"Portable Speaker",
 	"Canned Food",
 	"Cash Coupons",
-	"or Anything that you don't want to receive",
-	""
+	"Headphone",
+	"or Anything that you don't want to receive"
 };
 
 #endif
